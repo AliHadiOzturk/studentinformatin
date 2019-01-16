@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+  crossorigin="anonymous">
+
+  
+<div id="mySidenav" class="sidenav">
+  <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+  <a routerLink="/studentlist" style="margin-top:15px;">Student List</a>
+</div>
+<span id="menuButton" onclick="openNav()">&#9776; Menu</span>
+<div>
+  <div class="my-alert-center-style">
+    <nac-alert-center [animation]="fancy" [htmlTextEnabled]="true"></nac-alert-center>
+  </div>
+  <div class="insideContainer">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<div id="divFooter">
+    <a href="https://www.fb.com/AliHadiOzturk" target ="_blank"><img src="../assets/icons/facebook.png" ></a>
+    <a href="https://www.instagram.com/AliHadiOzturk" target="_blank"><img src="../assets/icons/instagram.png"></a>
+  Copyright&copy; Ali Hadi Öztürk. All Rights Reserved.
+  <a href="https://www.linkedin.com/in/alihadiozturk" target="_blank"><img src="../assets/icons/linkedin.png" ></a>
+  <a href="https://www.twitter.com/AliHadiOzturk" target="_blank"><img src="../assets/icons/twitter.png" ></a>
+</div>

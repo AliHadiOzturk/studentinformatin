@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Lesson Code</th>
+            <th scope="col">Lesson Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let lesson of currentStudent.Lessons">
+            <td>{{lesson.Code}}</td>
+            <td>{{lesson.Name}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="row">
+    <div class="col-md-9 col-md-push-3">
+        <input type="text" style="font-size:15pt;float:left;width:85%" class="form-control" aria-describedby="sizing-addon1" placeholder="Lesson Name" [(ngModel)]="studentLesson.Name">
+        <button type="button" style="margin:2px 0px 0px 10px;" class="btn btn-danger btn-lg" (click)="addLesson(currentStudent)">Add Lesson</button>
+    </div>
+    <div class="col-md-3 col-md-pull-9">
+        <input type="text" style="font-size:15pt;" class="form-control" placeholder="Lesson Code" [(ngModel)]="studentLesson.Code" >
+    </div>
+</div>
+<div style="text-align:center">
+    <button type="button" class="btn btn-info" style="margin-top:10px;font-size:10pt;" (click)="goBackToLessons(currentStudent.NationalId)">&#x276E; Go Back to Lessons</button>
+    <button type="button" class="btn btn-success" style="margin-top:10px;font-size:10pt;" (click)="goToList()">Go to Student List &#x276F;</button>
+  </div>

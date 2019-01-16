@@ -1,0 +1,24 @@
+<h1 style="text-align:center;color:#000;font-weight:bold;font-size:40pt;">
+  <small style="color:aliceblue">Lesson List for </small>
+  <br> {{currentStudent.Name}} {{currentStudent.Surname}}</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Lesson Code</th>
+      <th scope="col">Lesson Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let lesson of currentStudent.Lessons">
+      <td>{{lesson.Code}}</td>
+      <td>{{lesson.Name}}</td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align:center">
+  <button type="button" class="btn btn-warning btn-lg btn-block " style="margin-top:10px;font-size:12pt;" (click)="addLesson(currentStudent.NationalId)">Add Lesson</button>
+</div>
+<div style="text-align:center">
+  <button type="button" class="btn btn-info" style="margin-top:10px;font-size:20pt;" (click)="goBackToStudentEdit(currentStudent.NationalId)">&#x276E; Go to Student Edit</button>
+  <button type="button" class="btn btn-success" style="margin-top:10px;font-size:20pt;" (click)="goBackToList()">Go to Student List &#x276F;</button>
+</div>

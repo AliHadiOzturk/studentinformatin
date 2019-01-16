@@ -1,0 +1,64 @@
+  <div class="row">
+    <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+        <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" readonly [(ngModel)]="currentStudent.NationalId">
+    </div>
+    <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+        <h1 style="color:#fff;text-align:center;">International Id: </h1>
+    </div>
+    <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+        <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" readonly [(ngModel)]="currentStudent.SchoolId">
+    </div>
+    <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+        <h1 style="color:#fff;text-align:center;">School Id: </h1>
+    </div>
+    <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+        <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" [(ngModel)]="currentStudent.Name"> 
+    </div>
+    <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+        <h1 style="color:#fff;text-align:center;">Name: </h1>
+    </div>
+    <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+        <input type="text"  style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" [(ngModel)]="currentStudent.Surname">
+    </div>
+    <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+        <h1 style="color:#fff;text-align:center;">Surname: </h1>
+    </div>
+    <div style="margin-bottom:10px;width:100%;">
+        <button type="button" style="width:100%;font-size:10pt;" class="btn btn-warning btn-lg" (click)="openLessons(currentStudent.NationalId)">Show Lessons</button>
+    </div>
+
+
+
+<button type="button" class="btn btn-primary btn-lg btn-block" style="font-size:20pt;" (click)="updateStudent(currentStudent)">Update Student</button>
+<button type="button" class="btn btn-default" (click)="goBackToList()" style="margin-top:10px;font-size:10pt;">&#x276E; Go Back</button>
+
+
+
+
+
+
+
+
+<!-- <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">National Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">School Id</th>
+        <th scope="col">Lessons</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{currentStudent.NationalId}}</td>
+        <td>{{currentStudent.Name}}</td>
+        <td>{{currentStudent.Surname}}</td>
+        <td>{{currentStudent.SchoolId}}</td>
+        <td >
+            <button type="button" class="btn btn-primary btn-lg" (click)="openLessons(currentStudent.NationalId)">Lessons</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="insideContainer"></div> -->

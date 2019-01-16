@@ -1,0 +1,31 @@
+
+<h1 style="text-align:center;color:aliceblue;font-weight:bold;font-size:40pt;margin-bottom:10px;">Add Student</h1>
+
+<div class="row">
+  <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+    <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" [(ngModel)]="newStudent.NationalId">
+  </div>
+  <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+    <h1 style="color:#fff;text-align:center;">International Id: </h1>
+  </div>
+  <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+    <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" [(ngModel)]="newStudent.SchoolId">
+  </div>
+  <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+    <h1 style="color:#fff;text-align:center;">School Id: </h1>
+  </div>
+  <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+    <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" [(ngModel)]="newStudent.Name">
+  </div>
+  <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+    <h1 style="color:#fff;text-align:center;">Name: </h1>
+  </div>
+  <div class="col-md-9 col-md-push-3" style="margin-bottom:10px;">
+    <input type="text" style="height:100%;font-size:15pt;" class="form-control" aria-describedby="sizing-addon1" [(ngModel)]="newStudent.Surname">
+  </div>
+  <div class="col-md-3 col-md-pull-9" style="margin-bottom:10px;">
+    <h1 style="color:#fff;text-align:center;">Surname: </h1>
+  </div>
+  <button type="button" id="btnAddLesson" class="btn btn-success btn-lg btn-block" style="font-size:20pt;" (click)="addStudent()">Save Student and Add Lesson</button>
+  <button type="button" class="btn btn-default" style="margin-top:10px;font-size:10pt;" (click)="goBackToList()">&#x276E; Go to Student List</button>
+</div>

@@ -1,0 +1,34 @@
+<h1 style="text-align:center;color:aliceblue;font-weight:bold;font-size:40pt;">Student List<br>
+  <small style="color:aliceblue;">Where you can find all data</small>
+</h1>
+<div class="input-group input-group-lg">
+  <input type="text" class="form-control" placeholder="TCNo" aria-describedby="basic-addon1" [(ngModel)]="TckNo" (keyup)="onKey($event)">
+  <button type="button" class="btn btn-success btn-lg" (click)="startSearch()">Search</button>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">National Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Surname</th>
+      <th scope="col">School Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ogrenci of students;let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{ogrenci.NationalId}}</td>
+      <td>{{ogrenci.Name}}</td>
+      <td>{{ogrenci.Surname}}</td>
+      <td>{{ogrenci.SchoolId}}</td>
+      <td>
+        <button type="button" class="btn btn-primary btn-lg" (click)="edit(ogrenci.NationalId)">Update</button>
+        <button type="button" class="btn btn-danger btn-lg" (click)="deleteStudent(ogrenci.NationalId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align:center;font-size:10pt;">
+  <button type="button" class="btn btn-warning btn-lg" (click)="openStudentAdd()" style="font-size:15pt;">Add Student</button>
+</div>

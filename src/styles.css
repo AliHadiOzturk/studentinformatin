@@ -1,0 +1,109 @@
+td,tr,table,th{
+    font-size: 15pt;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 1000px;
+    
+}
+th{
+    color:rgba(71, 233, 22, 0.938);
+}
+body{
+    background-image: url("https://wallpaperclicker.com/storage/wallpaper/High-Definition-Ultra-HD-Wallpaper-96262544.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI';
+}
+#divFooter{
+    width: 100%;
+    height: 5%;
+    margin:0 auto;
+    padding-top: 10px;
+    position: fixed;
+    color: #fff;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgba(94, 223, 255, 0.685);
+    font-weight: bold;
+    font-size: 10pt;
+}
+.insideContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    /* margin-top: -50px;
+    margin-left: -100px; */
+    transform: translate(-50%, -50%);
+}
+.my-alert-center-style{
+    width: 30%;
+    height: auto;
+    left: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 10px auto 0px auto;
+}
+#menuButton{
+    width: auto;
+    height: auto;
+    font-size:30px;
+    cursor:pointer;
+    float:left;
+    margin-left:20px;
+    color:azure;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(94, 223, 255, 0.685);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 10px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    color:#fff;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.closebtn:hover{
+    border-bottom: 1px solid #fff;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
